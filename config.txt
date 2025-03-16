@@ -1,0 +1,2 @@
+net.mhm.ext.DaoImplV2
+net.mhm.metier.MetierImpl
