@@ -4,11 +4,9 @@ import net.mhm.dao.IDao;
 import net.mhm.metier.IMetier;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.lang.reflect.Method;
 import java.util.Scanner;
 
-public class pres2 {
+public class Pres2 {
     public static void main(String[] args) throws Exception {
         //FileNotFoundException, ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException
         Scanner scanner=new Scanner(new File("config.txt"));

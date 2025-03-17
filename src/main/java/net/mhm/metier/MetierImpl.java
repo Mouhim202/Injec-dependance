@@ -1,8 +1,14 @@
 package net.mhm.metier;
 
 import net.mhm.dao.IDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
+@Component("metier")
 public class MetierImpl implements IMetier {
+
+    //@Qualifier("d2")
     private IDao dao;
 
     /**
@@ -10,12 +16,12 @@ public class MetierImpl implements IMetier {
      * un objet d'une classe qui implemente l'interface IDO
      * au moment de l'instansiation
      */
-    public MetierImpl(IDao dao) {
+    public MetierImpl(@Qualifier("d2") IDao dao) {
+
         this.dao = dao;
     }
 
-    public MetierImpl() {
-    }
+
 
 
     @Override
