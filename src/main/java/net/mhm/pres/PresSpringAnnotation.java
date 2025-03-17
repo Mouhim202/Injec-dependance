@@ -11,5 +11,11 @@ public class PresSpringAnnotation {
                 new AnnotationConfigApplicationContext("net.mhm");
         IMetier metier = applicationContext.getBean(IMetier.class);
         System.out.println("RES="+metier.calcul());
+
+
+
+
+
+
     }
 }
